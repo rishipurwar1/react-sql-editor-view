@@ -28,12 +28,12 @@ const GlobalFilter = ({
         <title>{`${count} Records found || Atlan SQL Editor`}</title>
       </Helmet>
       <label className="flex gap-x-2 items-baseline">
-        <span className="text-primary-dark hidden md:inline-block">
+        <span className="text-primary-dark hidden md:inline-block font-semibold">
           Search:{" "}
         </span>
         <input
           type="text"
-          className="text-primary-dark rounded-md shadow-sm outline-none border-2 border-transparent focus:border-primary-dark transition p-2 w-40 max-w-40"
+          className="text-primary-dark rounded-md shadow-sm outline-none border-2 border-gray-300 focus:border-primary-dark transition p-2 w-40 md:w-52 "
           value={value || ""}
           onChange={(e) => {
             setValue(e.target.value);
