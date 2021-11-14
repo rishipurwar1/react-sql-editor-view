@@ -19,12 +19,12 @@ Try out the website : [ATLAN SQL Editor](https://atlan-react-sql-editor.netlify.
 
 ## 👨‍💻 Features
 
-- [x] User can get data of any of the below SQL queries either by using Text Editor or Sidebar Menu.
-- [x] User can filter data directly by clicking the Table Headers title.
-- [x] User can search for a particular data using the search bar.
-- [x] User can navigate to different pages using pagination.
-- [x] User can download the data in both CSV and JSON Format in just one click.
-- [x] User can see query runtime in milliseconds(ms).
+:white_check_mark: User can get data of any of the below SQL queries either by using Text Editor or Sidebar Menu.
+:white_check_mark: User can filter data directly by clicking the Table Headers title.
+:white_check_mark: User can search for a particular data using the search bar.
+:white_check_mark: User can navigate to different pages using pagination.
+:white_check_mark: User can download the data in both CSV and JSON Format in just one click.
+:white_check_mark: User can see query runtime in milliseconds(ms).
 
 ## ✍️ Predefined SQL Queries
 
@@ -41,7 +41,7 @@ Try out the website : [ATLAN SQL Editor](https://atlan-react-sql-editor.netlify.
 
 ## ⏱ Page Load Time
 
-Load time of this website is between 0.4 s to 0.6s.
+Page Load time of this website in desktop is in the range of 0.4 s to 0.6s.
 
 I tested the performance and load time of this website using these two tools Lighthouse Chrome DevTools and BrowserStack SpeedLab.
 
@@ -62,11 +62,11 @@ I tested the performance and load time of this website using these two tools Lig
 
 ## 🪜 Steps I took to optimize the page load time
 
-- Used `React.Lazy()` to lazy load the component and reduce the bundle size for faster load.
+- Used code-splitting with `React.Lazy()` and `Suspense` to lazy load the components and split javaScript into multiple chunks using Dynamic runtime Imports for faster page load.
 - Used `React.Memo()` to optimize the render performance of functional components.
-- Used JIT and PurgeCSS to remove unused CSS.
-- Used Lighthouse DevTools Extension to find the performance issues.
-- Used vercel to leverage its Vercel Edge Network compression that results in the better performance.
+- Used PurgeCSS to tree-shake unused styles and optimize my final build size.
+- Used Lighthouse DevTools Extension to find the performance issues and fix them using their actionable suggestion.
+- Used vercel to deploy this website to leverage its Vercel Edge Network compression that results in the better performance.
 
 ## Available Scripts
 
