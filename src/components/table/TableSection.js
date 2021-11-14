@@ -21,19 +21,22 @@ const TableSection = React.memo(({ query, isOpen }) => {
   const queryData = useMemo(() => data.slice(1), [data]);
   if (error)
     return (
-      <div
+      <section
         className={`${
           isOpen ? "col-start-2" : "col-start-1"
         } col-end-3 row-start-3 row-end-4 text-white m-6`}
       >
         <h1 className="text-center font-bold text-xl text-primary-dark">
-          Something Went Wrong 😔
+          Something Went Wrong{" "}
+          <span role="img" aria-label="sad face">
+            😔
+          </span>
         </h1>
-      </div>
+      </section>
     );
   return (
     <>
-      <div
+      <section
         className={`${
           isOpen ? "col-start-2" : "col-start-1"
         } col-end-3 row-start-3 row-end-4 text-white mx-6 my-12 lg:mx-12 overflow-hidden`}
@@ -54,7 +57,7 @@ const TableSection = React.memo(({ query, isOpen }) => {
         ) : (
           <img src={Loader} className="w-20 mx-auto" alt="loader" />
         )}
-      </div>
+      </section>
     </>
   );
 });

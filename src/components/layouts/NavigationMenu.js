@@ -25,6 +25,7 @@ const Navbar = React.memo(({ setQuery, setValue, isOpen, setIsOpen }) => {
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
+                  <title id="hamburger">navigation menu</title>
                   <path
                     fillRule="evenodd"
                     d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -47,6 +48,7 @@ const Navbar = React.memo(({ setQuery, setValue, isOpen, setIsOpen }) => {
                   fill="currentColor"
                   className="text-lg leading-lg text-white opacity-75 hover:opacity-100 transition-opacity"
                 >
+                  <title id="github">github repository</title>
                   <path
                     fillRule="evenodd"
                     clipRule="evenodd"
@@ -68,13 +70,14 @@ const Navbar = React.memo(({ setQuery, setValue, isOpen, setIsOpen }) => {
               fill="currentColor"
               onClick={() => setIsOpen(!isOpen)}
             >
+              <title id="rightArrow">right arrow</title>
               <path
                 fillRule="evenodd"
                 d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
                 clipRule="evenodd"
               />
             </svg>
-            <nav className="p-5">
+            <aside className="p-5">
               {TABLE_NAMES.map((name) => {
                 const finalName = convertToNormalString(name);
                 return (
@@ -104,7 +107,7 @@ const Navbar = React.memo(({ setQuery, setValue, isOpen, setIsOpen }) => {
                   </button>
                 );
               })}
-            </nav>
+            </aside>
           </div>
         </div>
       )}

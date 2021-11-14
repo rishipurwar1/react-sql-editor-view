@@ -16,33 +16,35 @@ const Editor = ({ setQuery, value, setValue, isOpen }) => {
   };
 
   return (
-    <div
+    <main
       className={`${
         isOpen ? "col-start-2" : "col-start-1"
       } col-end-3 row-start-2 row-end-3 mx-6 my-12 lg:mx-12`}
     >
-      <AceEditor
-        aria-label="query editor input"
-        mode="mysql"
-        theme="github"
-        name={Math.floor(Math.random() * 100000).toString()}
-        fontSize={16}
-        minLines={15}
-        maxLines={10}
-        width="100%"
-        showPrintMargin={false}
-        showGutter
-        placeholder="Write your Query here..."
-        editorProps={{ $blockScrolling: true }}
-        setOptions={{
-          enableBasicAutocompletion: true,
-          enableLiveAutocompletion: true,
-          enableSnippets: true,
-        }}
-        value={value}
-        onChange={onChange}
-        showLineNumbers
-      />
+      <label>
+        <AceEditor
+          aria-label="editor"
+          mode="mysql"
+          theme="github"
+          name="editor"
+          fontSize={16}
+          minLines={15}
+          maxLines={10}
+          width="100%"
+          showPrintMargin={false}
+          showGutter
+          placeholder="Write your Query here..."
+          editorProps={{ $blockScrolling: true }}
+          setOptions={{
+            enableBasicAutocompletion: true,
+            enableLiveAutocompletion: true,
+            enableSnippets: true,
+          }}
+          value={value}
+          onChange={onChange}
+          showLineNumbers
+        />
+      </label>
       <div>
         <Button handleClick={onSubmit} iconName="fas fa-play">
           <svg
@@ -51,6 +53,7 @@ const Editor = ({ setQuery, value, setValue, isOpen }) => {
             viewBox="0 0 20 20"
             fill="currentColor"
           >
+            <title id="run">run query</title>
             <path
               fillRule="evenodd"
               d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
@@ -60,7 +63,7 @@ const Editor = ({ setQuery, value, setValue, isOpen }) => {
           Run Query
         </Button>
       </div>
-    </div>
+    </main>
   );
 };
 

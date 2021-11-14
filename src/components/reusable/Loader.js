@@ -4,8 +4,7 @@ import LoaderSVG from "../../assets/imgs/loader.svg";
 const Loader = () => {
   return (
     <div className="w-screen h-screen bg-transparent flex items-center justify-center">
-      Loading...
-      <img src={LoaderSVG} className="" alt="loader" />
+      <img src={LoaderSVG} className="w-20" alt="loader" />
     </div>
   );
 };

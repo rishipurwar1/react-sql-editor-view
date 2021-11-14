@@ -94,6 +94,7 @@ const Table = ({ columns, data, completeData, query }) => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
+              <title id="download">Download CSV</title>
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -111,6 +112,7 @@ const Table = ({ columns, data, completeData, query }) => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
+              <title id="download">Download JSON</title>
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -227,6 +229,7 @@ const Table = ({ columns, data, completeData, query }) => {
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
+                  <title id="pageOne">Go to page one</title>
                   <path
                     fillRule="evenodd"
                     d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z"
@@ -245,6 +248,7 @@ const Table = ({ columns, data, completeData, query }) => {
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
+                  <title id="previousPage">Go to previous page</title>
                   <path
                     fillRule="evenodd"
                     d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
@@ -260,6 +264,7 @@ const Table = ({ columns, data, completeData, query }) => {
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
+                  <title id="nextPage">Go to next page</title>
                   <path
                     fillRule="evenodd"
                     d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
@@ -279,6 +284,7 @@ const Table = ({ columns, data, completeData, query }) => {
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
+                  <title id="lastPage">Go to last page</title>
                   <path
                     fillRule="evenodd"
                     d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z"
