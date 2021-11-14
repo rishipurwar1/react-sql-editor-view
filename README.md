@@ -19,12 +19,12 @@ Try out the website : [ATLAN SQL Editor](https://atlan-react-sql-editor.netlify.
 
 ## 👨‍💻 Features
 
-:white_check_mark: User can get data of any of the below SQL queries either by using Text Editor or Sidebar Menu.\
-:white_check_mark: User can filter data directly by clicking the Table Headers title.\
-:white_check_mark: User can search for a particular data using the search bar.\
-:white_check_mark: User can navigate to different pages using pagination.\
-:white_check_mark: User can download the data in both CSV and JSON Format in just one click.\
-:white_check_mark: User can see query runtime in milliseconds(ms).
+:white_check_mark: Users can get data of any of the below SQL queries either by using Text Editor or Sidebar Menu.\
+:white_check_mark: Users can filter data directly by clicking the Table Headers title.\
+:white_check_mark: Users can search for a particular data using the search bar.\
+:white_check_mark: Users can navigate to different pages using pagination.\
+:white_check_mark: Users can download the data in both CSV and JSON Format in just one click.\
+:white_check_mark: Users can see query runtime in milliseconds(ms).
 
 ## ✍️ Predefined SQL Queries
 
