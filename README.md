@@ -26,18 +26,27 @@ Try out the website : [ATLAN SQL Editor](https://atlan-react-sql-editor.netlify.
 - [x] User can download the data in both CSV and JSON Format in just one click.
 - [x] User can see query runtime in milliseconds(ms).
 
-## ✍️ Predefined Queries
+## ✍️ Predefined SQL Queries
 
-- select \* from customers
-- select \* from categories
-- select \* from employee_territories
-- select \* from order_details
-- select \* from orders
-- select \* from products
-- select \* from regions
-- select \* from shippers
-- select \* from suppliers
-- select \* from territories
+- `select * from customers`
+- `select * from categories`
+- `select * from employee_territories`
+- `select * from order_details`
+- `select * from orders`
+- `select * from products`
+- `select * from regions`
+- `select * from shippers`
+- `select * from suppliers`
+- `select * from territories`
+
+## ⏱ Page Load Time
+
+## 🪜 Steps I took to optimize the page load time
+
+- Used `React.Lazy()` to lazy load the component.
+- Used `React.Memo()` to optimize the render performance of functional components.
+- Used PurgeCSS to remove unused CSS.
+- Used `gzipper` to further compress the JS and CSS Files.
 
 ## Available Scripts
 
