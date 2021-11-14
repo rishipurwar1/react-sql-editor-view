@@ -1,6 +1,6 @@
 import React from "react";
 import TABLE_NAMES from "../../constants/constants";
-import { convertToNormalString } from "../../modules/list";
+import { convertToNormalString } from "../../modules/str";
 
 const Navbar = React.memo(({ setQuery, setValue, isOpen, setIsOpen }) => {
   const handleQuery = (queryName) => {

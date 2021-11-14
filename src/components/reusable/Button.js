@@ -1,5 +1,5 @@
 import React from "react";
-import { classNames } from "../../modules/list";
+import { classNames } from "../../modules/misc";
 
 export const Button = ({ children, className, handleClick }) => {
   return (
