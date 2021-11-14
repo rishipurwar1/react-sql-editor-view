@@ -10,7 +10,7 @@ This is a ATLAN SQL Editor built using ReactJs and TailwindCSS.
 <img src="https://img.shields.io/website?url=https://www.codingspace.codes&logo=github&style=flat-square" />
 </a>
 
-Try out the website : [ATLAN SQL Editor](https://atlan-react-sql-editor.netlify.app/)
+Try out the website : [ATLAN SQL Editor](https://react-atlan-sql-editor.vercel.app/)
 
 ## 👨‍🔧 Tech Stack
 
