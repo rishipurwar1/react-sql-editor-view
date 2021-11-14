@@ -41,12 +41,32 @@ Try out the website : [ATLAN SQL Editor](https://atlan-react-sql-editor.netlify.
 
 ## ⏱ Page Load Time
 
+Load time of this website is between 0.4 s to 0.6s.
+
+I tested the performance and load time of this website using these two tools Lighthouse Chrome DevTools and BrowserStack SpeedLab.
+
+### [Lighthouse Chrome DevTools Report](https://developers.google.com/web/tools/lighthouse#devtools) (got a perfect 💯)
+
+![lighthouse report](src/assets/screenshots/screenshot-two.png)
+
+- **First Contentful Paint** marks the time at which the first text or image is painted
+- **Time to interactive** is the amount of time it takes for the page to become fully interactive.
+- **Speed Index** shows how quickly the contents of a page are visibly populated.
+- **Total Blocking Time** is the sum of all time periods between FCP and Time to Interactive, when task length exceeded 50ms, expressed in milliseconds.
+- **Largest Contentful Paint** marks the time at which the largest text or image is painted.
+- **Cumulative Layout Shift** measures the movement of visible elements within the viewport.
+
+### [BrowserStack Report](https://www.browserstack.com/speedlab)
+
+![browserstack report](src/assets/screenshots/screenshot-three.png)
+
 ## 🪜 Steps I took to optimize the page load time
 
-- Used `React.Lazy()` to lazy load the component.
+- Used `React.Lazy()` to lazy load the component and reduce the bundle size for faster load.
 - Used `React.Memo()` to optimize the render performance of functional components.
-- Used PurgeCSS to remove unused CSS.
-- Used `gzipper` to further compress the JS and CSS Files.
+- Used JIT and PurgeCSS to remove unused CSS.
+- Used Lighthouse DevTools Extension to find the performance issues.
+- Used vercel to leverage its Vercel Edge Network compression that results in the better performance.
 
 ## Available Scripts
 
