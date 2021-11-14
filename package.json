@@ -6,16 +6,23 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "alasql": "^1.7.3",
     "react": "^17.0.2",
+    "react-ace": "^9.5.0",
     "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-hot-toast": "^2.1.1",
+    "react-json-to-csv": "^1.0.4",
     "react-scripts": "4.0.3",
+    "react-table": "^7.7.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run watch:css && react-scripts start",
+    "build": "npm run watch:css && react-scripts build && gzipper compress ./build/static/css && gzipper compress ./build/static/js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch:css": "postcss src/assets/tailwind.css -o src/assets/output.css"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +41,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.3.11",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
   }
 }
