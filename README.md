@@ -43,11 +43,11 @@ Try out the website : [ATLAN SQL Editor](https://atlan-react-sql-editor.netlify.
 
 Page Load time of this website in desktop is in the range of 0.4 s to 0.6s.
 
-I tested the performance and load time of this website using these two tools Lighthouse Chrome DevTools and BrowserStack SpeedLab.
+I calculated the performance and load time of this website using these two tools Lighthouse Chrome DevTools and BrowserStack SpeedLab.
 
 ### [Lighthouse Chrome DevTools Report](https://developers.google.com/web/tools/lighthouse#devtools) (got a perfect 💯)
 
-![lighthouse report](src/assets/screenshots/screenshot-two.png)
+![lighthouse report](src/assets/screenshots/screenshot-lighthouse.png)
 
 - **First Contentful Paint** marks the time at which the first text or image is painted
 - **Time to interactive** is the amount of time it takes for the page to become fully interactive.
