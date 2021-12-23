@@ -6,18 +6,22 @@ import Loader from "../../assets/imgs/loader.svg";
 
 const TableSection = React.memo(({ query, isOpen }) => {
   const { data, runtime, error } = useData(query);
-  const column =
-    data.length > 0 &&
-    Object.keys(data[0]).map((key) => {
-      const result = data[0][key]
-        .replace(/([A-Z]+)/g, " $1")
-        .replace(/([A-Z][a-z])/g, " $1");
-      return {
-        Header: result,
-        accessor: key,
-      };
-    });
-  const columns = useMemo(() => column, [column]);
+
+  const columns = useMemo(() => {
+    if (data.length > 0) {
+      return Object.keys(data[0]).map((key) => {
+        const result = data[0][key]
+          .replace(/([A-Z]+)/g, " $1")
+          .replace(/([A-Z][a-z])/g, " $1");
+
+        return {
+          Header: result,
+          accessor: key,
+        };
+      });
+    }
+  }, [data]);
+
   const queryData = useMemo(() => data.slice(1), [data]);
   if (error)
     return (
