@@ -21,8 +21,9 @@ const Editor = ({ setQuery, value, setValue, isOpen }) => {
         isOpen ? "col-start-2" : "col-start-1"
       } col-end-3 row-start-2 row-end-3 mx-6 my-12 lg:mx-12`}
     >
-      <label>
+      <label htmlFor="editor">
         <AceEditor
+          id="editor"
           aria-label="editor"
           mode="mysql"
           theme="github"
