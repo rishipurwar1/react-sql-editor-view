@@ -2,7 +2,7 @@
 
 This is a REACT SQL Editor built using ReactJs and TailwindCSS.
 
-![Homepage](src/assets/screenshots/screenshot-one.png)
+![Homepage](src/assets/screenshots/screenshot-readme.png)
 
 ## 👨‍💻 Demo
 
