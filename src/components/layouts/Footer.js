@@ -29,15 +29,6 @@ const Footer = React.memo(({ isOpen }) => {
         className="underline"
       >
         Rishi Purwar
-      </a>{" "}
-      for{" "}
-      <a
-        href="https://atlan.com/"
-        target="_blank"
-        rel="noreferrer"
-        className="underline"
-      >
-        Atlan
       </a>
     </div>
   );

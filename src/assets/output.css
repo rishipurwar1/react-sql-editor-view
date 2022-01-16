@@ -824,12 +824,12 @@ video {
 	--tw-border-opacity: 1;
 	border-color: rgba(209, 213, 219, var(--tw-border-opacity));
 }
-.border-transparent {
-	border-color: transparent;
-}
 .border-gray-200 {
 	--tw-border-opacity: 1;
 	border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+}
+.border-transparent {
+	border-color: transparent;
 }
 .bg-secondary-light {
 	--tw-bg-opacity: 1;
@@ -1087,6 +1087,10 @@ video {
 
 	.md\:inline-block {
 		display: inline-block;
+	}
+
+	.md\:w-52 {
+		width: 13rem;
 	}
 }
 

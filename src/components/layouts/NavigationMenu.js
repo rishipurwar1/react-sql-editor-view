@@ -33,7 +33,7 @@ const Navbar = React.memo(({ setQuery, setValue, isOpen, setIsOpen }) => {
                   />
                 </svg>
                 <a className="text-white font-bold align-middle" href="/">
-                  Atlan SQL Editor
+                  React SQL Editor
                 </a>
               </div>
 

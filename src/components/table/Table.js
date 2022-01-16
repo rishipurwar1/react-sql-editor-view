@@ -25,7 +25,7 @@ const GlobalFilter = ({
   return (
     <>
       <Helmet>
-        <title>{`${count} Records found || Atlan SQL Editor`}</title>
+        <title>{`${count} Records found || React SQL Editor`}</title>
       </Helmet>
       <label className="flex gap-x-2 items-baseline">
         <span className="text-primary-dark hidden md:inline-block font-semibold">
